@@ -57,7 +57,7 @@ class FastSpeech2(nn.Module):
         p_targets=None,
         e_targets=None,
         d_targets=None,
-        embeds=None, # 03.27.2021 Yang Li
+        embeds=None,
         p_control=1.0,
         e_control=1.0,
         d_control=1.0,
@@ -137,7 +137,7 @@ class FastSpeech2(nn.Module):
         texts,
         src_lens,
         max_src_len,
-        embeds=None,  # 03.27.2021 Yang Li
+        embeds=None,
         mels=None,
         mel_lens=None,
         max_mel_len=None,

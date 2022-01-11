@@ -60,7 +60,6 @@ class Dataset(Dataset):
         )
         duration = np.load(duration_path)
 
-        ### Yang Li 2021.03.26 adds cross utterance embeds
         embeds_path = os.path.join(
             self.preprocessed_path,
             self.embed_dir,
@@ -118,7 +117,6 @@ class Dataset(Dataset):
         raw_texts = [data[idx]["raw_text"] for idx in idxs]
         mels = [data[idx]["mel"] for idx in idxs]
         durations = [data[idx]["duration"] for idx in idxs]
-        # 03.27.2021 Yang Li
         embeds = np.array([data[idx]["embeds"] for idx in idxs])
         mean_mels = self.mean_mels(mels, durations)
 

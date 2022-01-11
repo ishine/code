@@ -52,7 +52,7 @@ class FastSpeech2(nn.Module):
         p_targets=None,
         e_targets=None,
         d_targets=None,
-        # embeds=None, # 03.27.2021 Yang Li
+        # embeds=None,
         p_control=1.0,
         e_control=1.0,
         d_control=1.0,

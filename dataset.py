@@ -61,7 +61,6 @@ class Dataset(Dataset):
         )
         duration = np.load(duration_path)
 
-        ### Yang Li 2021.03.26 adds cross utterance embeds
         # embeds_path = os.path.join(
         #     self.preprocessed_path,
         #     "embeds",
@@ -108,7 +107,6 @@ class Dataset(Dataset):
         pitches = [data[idx]["pitch"] for idx in idxs]
         energies = [data[idx]["energy"] for idx in idxs]
         durations = [data[idx]["duration"] for idx in idxs]
-        # 03.27.2021 Yang Li
         # embeds = [data[idx]["embeds"] for idx in idxs]
 
         text_lens = np.array([text.shape[0] for text in texts])

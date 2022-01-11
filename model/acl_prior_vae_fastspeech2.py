@@ -55,7 +55,7 @@ class FastSpeech2(nn.Module):
         mel_lens=None,
         max_mel_len=None,
         d_targets=None,
-        mean_mels=None, # 04.11.2021 Yang Li
+        mean_mels=None,
         d_control=1.0,
     ):
         src_masks = get_mask_from_lengths(src_lens, max_src_len)
